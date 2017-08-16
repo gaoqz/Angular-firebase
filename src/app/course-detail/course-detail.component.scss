@@ -1,0 +1,57 @@
+.lessons-list-container {
+  padding: 10px;
+  .nav-bar{
+    margin-bottom: 30px;
+  }
+  .lessons-list {
+    margin-top: 30px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 15px;
+    tr {
+      &:last-of-type{
+        border: none;
+      }
+      border-bottom: 1px solid darkgray;
+      cursor: pointer;
+    }
+
+    tr:hover {
+      background-color: rgba(65, 186, 191, 0.5);
+    }
+
+    td {
+      padding: 5px;
+    }
+
+    .md-icon {
+      font-family: 'Material Icons';
+      text-rendering: optimizeLegibility;
+      font-feature-settings: "liga" 1;
+      font-style: normal;
+      text-transform: none;
+      line-height: 1;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .course-logo {
+      height: 75px;
+      margin: 0 auto;
+      background-color: #FAFAFA;
+      background-image: url(https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png);
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-size: 65px;
+      background-position-y: center;
+    }
+  }
+
+  .tools-bar {
+    text-align: right;
+    margin-top: 30px;
+  }
+}

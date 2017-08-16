@@ -1,0 +1,28 @@
+<h2>{{(course$ | async)?.description}}</h2>
+<div class="lessons-list-container v-h-center-block-parent">
+
+  <div class="nav-bar" *ngIf="!showAll">
+    <button (click)="previous()">Previous page</button>
+    <button (click)="next()">Next page</button>
+  </div>
+
+  <!--<table class="table lessons-list card card-strong">-->
+    <!--<tbody>-->
+    <!--<tr>-->
+      <!--<td class="course-icon"><img></td>-->
+      <!--<td class="lesson-title">TODO</td>-->
+      <!--<td class="duration">-->
+        <!--<i class="md-icon duration-icon"></i>-->
+        <!--<span>TODO</span>-->
+      <!--</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+  <!--</table>-->
+  <app-lesson-list [lessons]="lessons$" (lesson)="navigateToLesson($event)"></app-lesson-list>
+
+  <div class="tools-bar table">
+    <button (click)="allCourse()">{{!showAll ? 'Show All' : 'Show Page'}}</button>
+    <button [routerLink]="['new']" [queryParams]="{courseId: (course$ | async)?.$key}">New Lesson</button>
+  </div>
+
+</div>

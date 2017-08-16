@@ -1,0 +1,14 @@
+<table class="table lessons-list card card-strong" *ngIf="lessons && lessons.length && lessons.length != undefined && lessons.length > 0">
+  <tbody>
+  <tr *ngFor="let lesson of lessons" (click)="selectLesson(lesson)">
+    <td class="lesson-title">{{lesson.description}}</td>
+    <td>
+      <i class="md-icon duration-icon">access_time</i>
+      <span>{{lesson.duration}}</span>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<div class="table-null table lessons-list card card-strong" *ngIf="lessons == null || lessons.length == undefined || lessons.length <= 0">
+  <p>Courses is None!!!</p>
+</div>

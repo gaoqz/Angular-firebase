@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+
+.search-bar {
+  margin-bottom: 30px;
+  width: 250px;
+  transition: width .5s ease;
+}
+
+.input {
+  width: 250px;
+  transition: width .5s ease;
+}
+.textarea{
+  width: 250px;
+  //height: 60px;
+}
+
+input {
+  outline:none;
+  -webkit-appearance: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #666;
+  border: solid 1px #d0d0d0;
+}
+
+input:focus{
+  width: 320px;
+  transition: width .5s ease;
+  border: solid 1px #5BC8CE;
+  &::-webkit-input-placeholder{
+    color: #5BC8CE;
+    font-size: 18px;
+    transition: font-size .3s ease;
+  }
+}
+
+input::-webkit-input-placeholder{
+  color: #999;
+  font-size: 16px;
+}
+
+textarea {
+  outline:none;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #666;
+  border: solid 1px #d0d0d0;
+}
+
+textarea::-webkit-input-placeholder{
+  color: #999;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #5BC8CE;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+button:hover {
+  background-color: rgba(65, 186, 191, 0.7);
+}
+
+@media (max-width: 1401px) {
+  .table {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .table {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .table {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .table {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .table {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

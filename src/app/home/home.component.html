@@ -1,0 +1,11 @@
+<h2>All lessons</h2>
+
+<h4>Total lessons:TODO</h4>
+
+<input type="text" class="search-bar" placeholder="Search lesson" (keyup)="search(input.value)" #input>
+
+<div class="lessons-list-container v-h-center-block-parent">
+
+  <app-lesson-list *ngIf="filtered" [lessons]="filtered"></app-lesson-list>
+
+</div>

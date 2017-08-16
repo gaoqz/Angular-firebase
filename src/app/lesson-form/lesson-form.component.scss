@@ -1,0 +1,16 @@
+.lesson-form {
+  width: 450px;
+  .form-field{
+    text-align: center;
+    padding: 10px 0;
+    label{
+      width: 90px;
+    }
+  }
+}
+
+
+.field-error-message {
+  padding-right: 20px;
+  color: red;
+}

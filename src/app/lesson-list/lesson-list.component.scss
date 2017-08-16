@@ -1,0 +1,24 @@
+.lessons-list {
+  padding: 10px 10px 0 10px;
+  display: table-cell;
+  margin-bottom: 15px;
+  tr {
+    &:last-of-type{
+      border: none;
+    }
+    border-bottom: 1px solid darkgray;
+    cursor: pointer;
+  }
+
+  tr:hover{
+    background-color: rgba(65, 186, 191, 0.5);
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+
+p{
+  color: rgba(65, 186, 191, 1);
+}

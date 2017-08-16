@@ -1,0 +1,4 @@
+<div class="new-lesson">
+  <app-lesson-form #form></app-lesson-form>
+  <button class="save-btn" [disabled]="!form.valid" (click)="save(form)">Save New Lesson</button>
+</div>

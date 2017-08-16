@@ -1,0 +1,22 @@
+.top-menu li:first-child {
+  margin-left: 40px;
+}
+
+header {
+  height: 55px;
+  background-color: #5BC8CE;
+}
+
+a {
+  text-decoration: none;
+  out-line: none;
+  color: #fff;
+}
+
+.top-menu li:last-child {
+  display: none;
+}
+
+.menu-active {
+  color: red;
+}
